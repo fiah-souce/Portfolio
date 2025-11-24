@@ -9,17 +9,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Afifatul Luthfiah</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <h1>Afifatul Luthfiah</h1>
+  <div class="nav-toggle" id="navToggle">☰</div>
+  <nav id="navMenu">
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
   <section id="home" class="hero">
-    <img src="image/ayang.jpg" alt="Profile Picture" />
+    <img src="image/aku2.jpg" alt="Profile Picture" />
     <h2>Hello, I'm <span style="color: var(--primary)">Afifatul Luthfiah</span></h2>
     <p>Mahasiswa | Part-time Mentor | Ilustrator</p>
   </section>
@@ -29,17 +30,18 @@
     <div class="project-grid">
       <div class="card">
         <h3>My Activity</h3>
-        <a href="my activity.html" style="color: var(--text);">There is my activity.</a>
+        <a href="projects.html#activity" style="color: var(--text);">There is my activity.</a>
       </div>
 
       <div class="card">
         <h3>My Friends</h3>
-        <p>There is my lovely friends.</p>
+      <a href="projects.html#friends" style="color: var(--text);">There is my lovely friends.</a>
       </div>
 
       <div class="card">
-        <h3>Project Three</h3>
-        <p>This project showcases your design and coding skills.</p>
+        <h3>My Art</h3>
+       <a href="https://www.instagram.com/ehe_uyaa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="color: var(--text);">There is my mini art.</a>
+
       </div>
     </div>
   </section>
@@ -52,7 +54,7 @@
   </section>
 
   <footer>
-    &copy; 2025 Afifatul Luthfiah. All Rights Reserved.
+    &copy; 2025 Afifatul Luthfiah. A1F025031.
   </footer>
 
   <script>
@@ -64,6 +66,12 @@
         target.scrollIntoView({ behavior: 'smooth' });
       });
     });
+    
+  const navToggle = document.getElementById("navToggle");
+  const navMenu = document.getElementById("navMenu");
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
   </script>
 </body>
 </html>
